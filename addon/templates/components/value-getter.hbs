@@ -1,0 +1,9 @@
+{{#if (eq @delayType "setTimeout")}}
+  {{side-effect-helper @value this.getValueWithSetTimeout}}
+{{/if}}
+{{#if (eq @delayType "timeout")}}
+  {{side-effect-helper @value this.getValueWithTimeout}}
+{{/if}}
+{{#if (eq @delayType "later")}}
+  {{side-effect-helper @value this.getValueWithLater}}
+{{/if}}
